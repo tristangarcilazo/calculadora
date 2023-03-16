@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title class="material-symbols-outlined">calculate Calculadora</title>
+</head>
+<body onload="calc()">
+    <div class='contenedor'>
+        <h1>Calculadora</h1>
+    </div>
+    <div class="fondo">
+        <div class='display'>
+            <p id="resu" class="res">0.0</p>
+        </div>
+        <div class="btns">
+            <button onclick="limpiar()">AC</button>
+            <button onclick="borrar()">C</button>
+            <button class="operacion" onclick="operar('porcentaje')">%</button>
+            <button class="operacion" onclick="operar('dividir')">/</button>
+            <button class="num" onclick="adNum(this.innerHTML)">7</button>
+            <button class="num" onclick="adNum(this.innerHTML)">8</button>
+            <button class="num" onclick="adNum(this.innerHTML)">9</button>
+            <button class="operacion" onclick="operar('multiplicar')">*</button>
+            <button class="num" onclick="adNum(this.innerHTML)">4</button>
+            <button class="num" onclick="adNum(this.innerHTML)">5</button>
+            <button class="num" onclick="adNum(this.innerHTML)">6</button>
+            <button class="operacion" onclick="operar('sumar')" id="suma" <!--onclick="operar('+')"-->+</button>
+            <button class="num" onclick="adNum(this.innerHTML)">1</button>
+            <button class="num" onclick="adNum(this.innerHTML)">2</button>
+            <button class="num" onclick="adNum(this.innerHTML)">3</button>
+            <button class="operacion" onclick="operar('restar')">-</button>
+            <button onclick="adNum(this.innerHTML)">.</button>
+            <button class="num" onclick="adNum(this.innerHTML)">0</button>
+            <button id="raiz" class="operacion" onclick="operar('raiz')">&radic;</button>
+            <button id="igual">=</button>
+        </div>
+    </div>
+    <script src="js/calc.js"script> </script>
+</body>
+
+
+
+</html>
