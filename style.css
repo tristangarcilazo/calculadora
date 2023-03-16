@@ -1,0 +1,40 @@
+body {
+    background-color: grey;
+}
+h1 {
+    text-transform: uppercase;
+    color: rgb(1, 1, 19);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.display {
+    font-size: 5em;
+    margin: 0;
+    margin-bottom: 5px;
+    background-color: rgb(10, 221, 204);
+    border-style: 2px solid rgb(31, 240, 187);
+    border-radius: 8px;
+
+}
+.res {
+    text-align: right;
+    margin: 4px;
+}
+
+.btns {
+    display: grid;
+    grid: 50px 50px 50px 50px 50px/ auto auto auto auto;
+    grid-gap: 3px;
+}
+
+button:hover{
+    background-color: rgb(10, 231, 204);
+}
+
+.fondo {
+    background-color: black;
+    padding: 10px;
+    border-style: 4px soli black;
+    border-radius: 10px;
+}
